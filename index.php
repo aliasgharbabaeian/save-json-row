@@ -1,5 +1,5 @@
 <?php
-  file_put_contents('logs/users.json',file_get_contents('http://webtrim.ir/json/users.json'));
+  file_put_contents('logs/users.json',file_get_contents('users.json'));
   $user_list = file_get_contents('logs/users.json');
   $user_list = json_decode($user_list, false);
   $all_users = $user_list->data[0]->users->data;
